@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Form } from "react-bootstrap";
+import ListaTareas from "./ListaTareas";
 
 const FormularioTareas = () => {
   return (
@@ -15,6 +16,7 @@ const FormularioTareas = () => {
             Agregar
           </Button>
         </Form.Group>
+        <ListaTareas></ListaTareas>
       </Form>
     </div>
   );
