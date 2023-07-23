@@ -4,7 +4,7 @@ import ListaTareas from "./ListaTareas";
 
 const FormularioTareas = () => {
   const [tarea, setTarea] = useState("");
-  const [listaTareas, setlistaTareas] = useState("");
+  const [listaTareas, setlistaTareas] = useState([]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -27,7 +27,7 @@ const FormularioTareas = () => {
             Agregar
           </Button>
         </Form.Group>
-        <ListaTareas></ListaTareas>
+        <ListaTareas paqueteTareas={listaTareas}></ListaTareas>
       </Form>
     </>
   );
