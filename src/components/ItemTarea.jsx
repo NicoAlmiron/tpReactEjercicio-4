@@ -5,7 +5,7 @@ const ItemTarea = ({ nombreTarea, borrarTarea, index }) => {
   return (
     <ListGroup.Item className="d-flex justify-content-between">
       {nombreTarea}
-      <Button variant="danger" onClick={() => borrarTarea(nombreTarea, index)}>
+      <Button variant="danger" onClick={() => borrarTarea(index)}>
         Borrar
       </Button>
     </ListGroup.Item>
