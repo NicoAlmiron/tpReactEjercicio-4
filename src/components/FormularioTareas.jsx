@@ -12,12 +12,11 @@ const FormularioTareas = () => {
     setTarea("");
   };
 
-  const borrarTarea = (tareaBorrar, index) => {
-    let listaTareasFiltrada = listaTareas.filter((itemListaTareas, i) => {
-      itemListaTareas !== tareaBorrar && index === i;
-      console.log(i);
-    });
-    console.log(index);
+  const borrarTarea = (index) => {
+    let listaTareasFiltrada = listaTareas.filter(
+      (itemListaTarea, i) => index !== i
+    );
+    setlistaTareas(listaTareasFiltrada);
   };
 
   return (
